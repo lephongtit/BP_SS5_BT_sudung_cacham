@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script>
+          let nhap = window.prompt();
+          let x = nhap.toString();
+          let mang = [x[0]];
+
+          for (let i=1;i< x.length;i++){
+              if ( (x[i-1]%2===0) && (x[i]%2===0) ){
+                  mang.push("-",x[i]);
+              }
+              else {
+                  mang.push(x[i]);
+              }
+          }
+          console.log(mang.join(""));
+      </script>
+</body>
+</html>
